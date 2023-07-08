@@ -8,11 +8,10 @@ public class CCTV : MonoBehaviour
     bool isMoving = false;
     float inputX, inputY;
     float currentRotationX = 0f, currentRotationY = 0f;
-    float maxRotationX = 15f;
-    float maxRotationY = 15f;
-    float minRotationY = -15f;
+    float maxRotationX = 25f;
+    float maxRotationY = 25f;
+    float minRotationY = -25f;
 
-    // Update is called once per frame
     void Update()
     {
         inputX = Input.GetAxis("Horizontal");
