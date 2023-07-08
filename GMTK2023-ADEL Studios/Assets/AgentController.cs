@@ -2,29 +2,40 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.XR;
+using static AgentController;
 
 public class AgentController : MonoBehaviour
 {
-    [SerializeField] private Transform targetDirection;
     [SerializeField] private NavMeshAgent Agent;
     [SerializeField] private string decisionTag;
-    [SerializeField] private string obstacleTag;
-    [SerializeField] private Transform agentTransform;
-    [SerializeField] private Transform directionTransform;
+    [SerializeField] private LayerMask obstacleLayer;
+    [SerializeField] private DIR initialDirection;
 
     [SerializeField] private float raycastRange = 8f;
-
+    [SerializeField] private float movementSpeed = 1.5f;
     [SerializeField] private float decisionTime = 5f;
+
 
     public enum STATES
     {
         WALKING,
         DECISION,
-        IDLE
+        PENDING
+    }
+
+    public enum DIR
+    {
+        front,
+        right,
+        left,
+        back
     }
 
     STATES currentState = STATES.WALKING;
     STATES previousState;
+
+    DIR targetDirection;
 
     Vector3 targetPosition;
 
@@ -32,11 +43,16 @@ public class AgentController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.name == decisionTag)
+        if (other.transform.tag == decisionTag)
         {
             Debug.Log("in decision area ");
             currentState = STATES.DECISION;
         }
+    }
+
+    public void ChangeState (STATES s)
+    {
+        this.currentState = s;
     }
 
     private void OnStateChange()
@@ -58,34 +74,33 @@ public class AgentController : MonoBehaviour
         previousState = currentState;
     }
 
-    private void RotateAgentDirection(float degrees)
+    private bool CanWalkTowards()
     {
-        Vector3 rotationAxis = Agent.transform.up;
-        transform.RotateAround(Agent.transform.position, rotationAxis, degrees);
-    }
+        Vector3 reverseDirection = -targetPosition;
 
-    private bool CanWalkTowards(Vector3 direction)
-    {
-        RaycastHit hit;
-        Debug.DrawRay(transform.position, direction, Color.blue, 5f);
-        if (Physics.Raycast(transform.position, direction, out hit, raycastRange))
+        Vector3[] checkDirections = { transform.forward, transform.right, -transform.right, -transform.forward };
+        
+
+        foreach (Vector3 d in checkDirections)
         {
-            if (hit.transform.tag == obstacleTag)
+            if (d != reverseDirection)
             {
-                //if there's an obstacle in this path;
-                Debug.Log("there's an obstacle");
-                return false;
+                RaycastHit hit;
+                if (!Physics.Raycast(transform.position, d, out hit, raycastRange, obstacleLayer))
+                {
+                    Debug.Log("the direction " + d.ToString() + " is empty, moving towards that");
+                    targetPosition = d;
+                    return true;
+                }
             }
         }
-        //if no obstacle then go towards this
-        Debug.Log("No obstacles, turning towards a direction");
-        Debug.DrawRay(transform.position, direction, Color.red, 5f);
 
-        return true;
+        return false;
     }
     private void Start()
     {
         previousState = currentState;
+        targetPosition = transform.forward;
     }
 
     void Update()
@@ -104,31 +119,21 @@ public class AgentController : MonoBehaviour
 
             case STATES.WALKING:
                 Agent.isStopped = false;
-                Vector3 targetPosition = targetDirection.position;
-                Agent.SetDestination(targetPosition);
+                Agent.Move(targetPosition * Time.deltaTime * movementSpeed);
 
                 break;
 
             case STATES.DECISION:
                 decisionTimer -= Time.deltaTime;
-                if (CanWalkTowards(transform.forward))
+                if (CanWalkTowards())
                 {
-                    currentState = STATES.WALKING;
-                }
-                else if (CanWalkTowards(transform.right))
-                {
-                    RotateAgentDirection(90f);
-                    currentState = STATES.WALKING;
-                }
-                else if (CanWalkTowards(-1 * transform.right))
-                {
-                    RotateAgentDirection(-90f);
+                    Debug.Log("switching to walking");
                     currentState = STATES.WALKING;
                 }
 
                 if (decisionTimer <= 0f)
                 {
-                    RotateAgentDirection(180f);
+                    targetPosition = -targetPosition;
                     currentState = STATES.WALKING;
                 }
                 break;
