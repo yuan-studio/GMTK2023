@@ -34249,41 +34249,6 @@ MonoBehaviour:
   camera2: {fileID: 1985352400}
   camera3: {fileID: 2018347621}
   camera4: {fileID: 2008531398}
-  camera5: {fileID: 0}
-  camera6: {fileID: 0}
-  camera7: {fileID: 0}
-  camera8: {fileID: 0}
-  camera9: {fileID: 0}
-  camera10: {fileID: 0}
-  camera11: {fileID: 0}
-  camera12: {fileID: 0}
-  camera13: {fileID: 0}
-  camera14: {fileID: 0}
-  camera15: {fileID: 0}
-  camera16: {fileID: 0}
-  camera17: {fileID: 0}
-  camera18: {fileID: 0}
-  camera19: {fileID: 0}
-  camera20: {fileID: 0}
-  camera21: {fileID: 0}
-  camera22: {fileID: 0}
-  camera23: {fileID: 0}
-  camera24: {fileID: 0}
-  camera25: {fileID: 0}
-  camera26: {fileID: 0}
-  camera27: {fileID: 0}
-  camera28: {fileID: 0}
-  camera29: {fileID: 0}
-  camera30: {fileID: 0}
-  camera31: {fileID: 0}
-  camera32: {fileID: 0}
-  camera33: {fileID: 0}
-  camera34: {fileID: 0}
-  camera35: {fileID: 0}
-  camera36: {fileID: 0}
-  camera37: {fileID: 0}
-  camera38: {fileID: 0}
-  camera39: {fileID: 0}
 --- !u!4 &138440990
 Transform:
   m_ObjectHideFlags: 0
@@ -34992,7 +34957,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1058542750}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13971.423, y: 0, z: -19162.61}
+  m_LocalPosition: {x: -14168, y: 12, z: -19162.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -36515,7 +36480,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-29182
+  m_Name: pb_Mesh27436
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
