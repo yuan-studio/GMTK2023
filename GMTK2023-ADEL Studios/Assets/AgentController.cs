@@ -19,7 +19,8 @@ public class AgentController : MonoBehaviour
     {
         WALKING,
         DECISION,
-        PENDING
+        PENDING,
+        IDLE
     }
 
     public enum DIRECTION 
@@ -40,9 +41,11 @@ public class AgentController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log(other.transform.tag);
         if (other.transform.CompareTag(decisionTag))
         {
-            enteredDecisionPoint = true;
+            Agent.SetDestination(transform.position + targetPosition * 1f);
+            ChangeState(STATES.PENDING);
         }
     }
 
@@ -64,6 +67,10 @@ public class AgentController : MonoBehaviour
                 break;
 
             case STATES.PENDING:
+                break;
+
+            case STATES.IDLE:
+                Agent.isStopped = true;
                 break;
         }
         previousState = currentState;
@@ -127,6 +134,8 @@ public class AgentController : MonoBehaviour
 
         switch (currentState)
         {
+
+
             case STATES.PENDING:
                 if (Agent.remainingDistance <= 0.1f)
                 {
@@ -160,8 +169,7 @@ public class AgentController : MonoBehaviour
         //if player enters decision point
         if (enteredDecisionPoint)
         {
-            Agent.SetDestination(transform.position + targetPosition * 1f);
-            ChangeState(STATES.PENDING);
+            
             enteredDecisionPoint = false;
         }
 
