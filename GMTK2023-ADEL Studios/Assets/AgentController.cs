@@ -35,7 +35,6 @@ public class AgentController : MonoBehaviour
         if (other.name == decisionTag)
         {
             Debug.Log("in decision area ");
-            targetPosition = other.gameObject.transform.position;
             currentState = STATES.DECISION;
         }
     }
@@ -49,7 +48,6 @@ public class AgentController : MonoBehaviour
                 break;
 
             case STATES.DECISION:
-                Agent.SetDestination(targetPosition);
                 decisionTimer = decisionTime;
                 break;
 
@@ -60,7 +58,13 @@ public class AgentController : MonoBehaviour
         previousState = currentState;
     }
 
-    private void CanWalkTowards(Vector3 direction)
+    private void RotateAgentDirection(float degrees)
+    {
+        Vector3 rotationAxis = Agent.transform.up;
+        transform.RotateAround(Agent.transform.position, rotationAxis, degrees);
+    }
+
+    private bool CanWalkTowards(Vector3 direction)
     {
         RaycastHit hit;
         Debug.DrawRay(transform.position, direction, Color.blue, 5f);
@@ -69,15 +73,15 @@ public class AgentController : MonoBehaviour
             if (hit.transform.tag == obstacleTag)
             {
                 //if there's an obstacle in this path;
-                Debug.LogError("there's an obstacle");
-                return;
+                Debug.Log("there's an obstacle");
+                return false;
             }
         }
         //if no obstacle then go towards this
-        Quaternion targetDirection = Quaternion.LookRotation(direction);
-        transform.rotation = Quaternion.RotateTowards(transform.rotation, targetDirection, Agent.angularSpeed * Time.deltaTime);
+        Debug.Log("No obstacles, turning towards a direction");
+        Debug.DrawRay(transform.position, direction, Color.red, 5f);
 
-        currentState = STATES.WALKING;
+        return true;
     }
     private void Start()
     {
@@ -86,6 +90,7 @@ public class AgentController : MonoBehaviour
 
     void Update()
     {
+        Debug.Log(currentState.ToString());
         if (currentState != previousState)
         {
             OnStateChange();
@@ -99,20 +104,31 @@ public class AgentController : MonoBehaviour
 
             case STATES.WALKING:
                 Agent.isStopped = false;
-                Vector3 targetPosition = transform.position + (transform.forward * 2f);
+                Vector3 targetPosition = targetDirection.position;
                 Agent.SetDestination(targetPosition);
 
                 break;
 
             case STATES.DECISION:
                 decisionTimer -= Time.deltaTime;
-                if (Agent.remainingDistance <= 0.1f)
+                if (CanWalkTowards(transform.forward))
                 {
-                    CanWalkTowards(transform.forward);
+                    currentState = STATES.WALKING;
                 }
-                
+                else if (CanWalkTowards(transform.right))
+                {
+                    RotateAgentDirection(90f);
+                    currentState = STATES.WALKING;
+                }
+                else if (CanWalkTowards(-1 * transform.right))
+                {
+                    RotateAgentDirection(-90f);
+                    currentState = STATES.WALKING;
+                }
+
                 if (decisionTimer <= 0f)
                 {
+                    RotateAgentDirection(180f);
                     currentState = STATES.WALKING;
                 }
                 break;
