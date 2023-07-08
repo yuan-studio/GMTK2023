@@ -10,43 +10,42 @@ public class AgentController : MonoBehaviour
     [SerializeField] private NavMeshAgent Agent;
     [SerializeField] private string decisionTag;
     [SerializeField] private LayerMask obstacleLayer;
-    [SerializeField] private DIR initialDirection;
+    [SerializeField] private DIRECTION initialDirection;
 
     [SerializeField] private float raycastRange = 8f;
-    [SerializeField] private float movementSpeed = 1.5f;
     [SerializeField] private float decisionTime = 5f;
-
 
     public enum STATES
     {
         WALKING,
         DECISION,
-        PENDING
+        PENDING,
+        IDLE
     }
 
-    public enum DIR
-    {
-        front,
-        right,
-        left,
-        back
+    public enum DIRECTION 
+    { 
+        FRONT,
+        BACK,
+        LEFT,
+        RIGHT
     }
 
     STATES currentState = STATES.WALKING;
     STATES previousState;
 
-    DIR targetDirection;
-
     Vector3 targetPosition;
 
     private float decisionTimer;
+    private bool enteredDecisionPoint = false;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.transform.tag == decisionTag)
+        Debug.Log(other.transform.tag);
+        if (other.transform.CompareTag(decisionTag))
         {
-            Debug.Log("in decision area ");
-            currentState = STATES.DECISION;
+            Agent.SetDestination(transform.position + targetPosition * 1f);
+            ChangeState(STATES.PENDING);
         }
     }
 
@@ -68,7 +67,10 @@ public class AgentController : MonoBehaviour
                 break;
 
             case STATES.PENDING:
+                break;
 
+            case STATES.IDLE:
+                Agent.isStopped = true;
                 break;
         }
         previousState = currentState;
@@ -77,7 +79,6 @@ public class AgentController : MonoBehaviour
     private bool CanWalkTowards()
     {
         Vector3 reverseDirection = -targetPosition;
-
         Vector3[] checkDirections = { transform.forward, transform.right, -transform.right, -transform.forward };
         
 
@@ -85,10 +86,8 @@ public class AgentController : MonoBehaviour
         {
             if (d != reverseDirection)
             {
-                RaycastHit hit;
-                if (!Physics.Raycast(transform.position, d, out hit, raycastRange, obstacleLayer))
+                if (!Physics.Raycast(transform.position, d, out _, raycastRange, obstacleLayer))
                 {
-                    Debug.Log("the direction " + d.ToString() + " is empty, moving towards that");
                     targetPosition = d;
                     return true;
                 }
@@ -100,7 +99,29 @@ public class AgentController : MonoBehaviour
     private void Start()
     {
         previousState = currentState;
-        targetPosition = transform.forward;
+        
+        switch (initialDirection)
+        {
+            case DIRECTION.FRONT:
+                targetPosition = transform.forward;
+                break;
+
+            case DIRECTION.LEFT:
+                targetPosition = -transform.right;
+                break;
+
+            case DIRECTION.BACK:
+                targetPosition = -transform.forward;
+                break;
+
+            case DIRECTION.RIGHT:
+                targetPosition = transform.right;
+                break;
+
+            default:
+                targetPosition = transform.forward;
+                break;
+        }
     }
 
     void Update()
@@ -113,24 +134,30 @@ public class AgentController : MonoBehaviour
 
         switch (currentState)
         {
-            case STATES.PENDING:
 
+
+            case STATES.PENDING:
+                if (Agent.remainingDistance <= 0.1f)
+                {
+                    Debug.Log("Arrived at decision point");
+                    ChangeState(STATES.DECISION);
+                }
                 break;
 
             case STATES.WALKING:
                 Agent.isStopped = false;
-                Agent.Move(targetPosition * Time.deltaTime * movementSpeed);
-
+                Agent.SetDestination(transform.position + targetPosition);
                 break;
 
             case STATES.DECISION:
                 decisionTimer -= Time.deltaTime;
+                //if there's an open path forward, left, or right
                 if (CanWalkTowards())
                 {
-                    Debug.Log("switching to walking");
                     currentState = STATES.WALKING;
                 }
 
+                //else go backwards
                 if (decisionTimer <= 0f)
                 {
                     targetPosition = -targetPosition;
@@ -138,8 +165,13 @@ public class AgentController : MonoBehaviour
                 }
                 break;
         }
+        //state changes and checks happen here
+        //if player enters decision point
+        if (enteredDecisionPoint)
+        {
+            
+            enteredDecisionPoint = false;
+        }
+
     }
-
-    //state changes and checks happen here
-
 }
