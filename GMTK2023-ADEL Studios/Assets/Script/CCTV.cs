@@ -9,8 +9,8 @@ public class CCTV : MonoBehaviour
     float inputX, inputY;
     float currentRotationX = 0f, currentRotationY = 0f;
     float maxRotationX = 25f;
-    float maxRotationY = 25f;
-    float minRotationY = -25f;
+    float maxRotationY = 5f;
+    float minRotationY = -10f;
 
     void Update()
     {
@@ -42,7 +42,7 @@ public class CCTV : MonoBehaviour
 
     private void Rotate()
     {
-        float rotationAmountX = inputX * 20 * Time.deltaTime;
+        float rotationAmountX = inputX * 40 * Time.deltaTime;
         float newRotationX = currentRotationX + rotationAmountX;
 
         newRotationX = Mathf.Clamp(newRotationX, -maxRotationX, maxRotationX);
@@ -56,7 +56,7 @@ public class CCTV : MonoBehaviour
 
     private void Updown()
     {
-        float rotationAmountY = inputY * -20 * Time.deltaTime;
+        float rotationAmountY = inputY * -40 * Time.deltaTime;
         float newRotationY = currentRotationY + rotationAmountY;
 
         newRotationY = Mathf.Clamp(newRotationY, minRotationY, maxRotationY);
