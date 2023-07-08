@@ -67,7 +67,7 @@ public class AgentController : MonoBehaviour
                 decisionTimer = decisionTime;
                 break;
 
-            case STATES.IDLE:
+            case STATES.PENDING:
 
                 break;
         }
@@ -113,7 +113,7 @@ public class AgentController : MonoBehaviour
 
         switch (currentState)
         {
-            case STATES.IDLE:
+            case STATES.PENDING:
 
                 break;
 
