@@ -9,6 +9,8 @@ public class CCTVSwitch : MonoBehaviour
     public Camera camera2;
     public Camera camera3;
     public Camera camera4;
+   
+ 
     private int currentCameraIndex = 0;
 
     void Start()
@@ -17,6 +19,7 @@ public class CCTVSwitch : MonoBehaviour
         cameras.Add(camera2);
         cameras.Add(camera3);
         cameras.Add(camera4);
+       
 
         for (int i = 1; i < cameras.Count; i++)
         {
