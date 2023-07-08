@@ -44,7 +44,7 @@
             {
                 "type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "ShapeComponent.SettingsEnabled",
-                "value": "{\"m_Value\":true}"
+                "value": "{\"m_Value\":false}"
             },
             {
                 "type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
@@ -63,18 +63,23 @@
             },
             {
                 "type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
-                "key": "SelectEdgeLoop.selectIterative",
+                "key": "smoothing.showSettings",
                 "value": "{\"m_Value\":false}"
             },
             {
                 "type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
-                "key": "meshImporter.quads",
-                "value": "{\"m_Value\":true}"
+                "key": "smoothing.showPreview",
+                "value": "{\"m_Value\":false}"
             },
             {
                 "type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
-                "key": "meshImporter.smoothing",
-                "value": "{\"m_Value\":true}"
+                "key": "smoothing.showNormals",
+                "value": "{\"m_Value\":false}"
+            },
+            {
+                "type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                "key": "smoothing.showHelp",
+                "value": "{\"m_Value\":false}"
             },
             {
                 "type": "UnityEngine.ProBuilder.LogLevel, Unity.ProBuilder, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
@@ -144,7 +149,7 @@
             {
                 "type": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "key": "ShapeBuilder.LastSize",
-                "value": "{\"m_Value\":{\"x\":-0.7271337509155273,\"y\":6.349623203277588,\"z\":-2.3702845573425295}}"
+                "value": "{\"m_Value\":{\"x\":1.3104209899902344,\"y\":1.5247297286987305,\"z\":-36.36421203613281}}"
             },
             {
                 "type": "UnityEngine.Quaternion, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
@@ -178,28 +183,18 @@
             },
             {
                 "type": "UnityEngine.ProBuilder.Shapes.Shape, Unity.ProBuilder, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                "key": "ShapeBuilder.Cube",
+                "value": "{}"
+            },
+            {
+                "type": "UnityEngine.ProBuilder.Shapes.Shape, Unity.ProBuilder, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "key": "ShapeBuilder.Sprite",
                 "value": "{}"
             },
             {
                 "type": "UnityEngine.ProBuilder.Shapes.Shape, Unity.ProBuilder, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-                "key": "ShapeBuilder.Plane",
+                "key": "ShapeBuilder.Sphere",
                 "value": "{}"
-            },
-            {
-                "type": "UnityEngine.ProBuilder.Shapes.Shape, Unity.ProBuilder, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-                "key": "ShapeBuilder.Door",
-                "value": "{}"
-            },
-            {
-                "type": "UnityEngine.ProBuilder.Shapes.Shape, Unity.ProBuilder, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-                "key": "ShapeBuilder.Cube",
-                "value": "{}"
-            },
-            {
-                "type": "System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
-                "key": "meshImporter.smoothingAngle",
-                "value": "{\"m_Value\":1.0}"
             }
         ]
     }
