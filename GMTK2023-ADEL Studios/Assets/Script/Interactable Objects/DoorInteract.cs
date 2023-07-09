@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class DoorInteract : Interactable
 {
+    [SerializeField] private GameObject doorModel;
+
     [SerializeField] private float openAmount = 5f;
     [SerializeField] private float openDuration = 1f;
 
@@ -14,7 +16,7 @@ public class DoorInteract : Interactable
     private IEnumerator ToggleDoor()
     {
         animating = true;
-        Vector3 startPosition = transform.position;
+        Vector3 startPosition = doorModel.transform.position;
         Vector3 targetPosition;
         if (isOpen)
         {
@@ -30,12 +32,12 @@ public class DoorInteract : Interactable
 
         while (elapsedTime < openDuration)
         {
-            transform.position = Vector3.Lerp(startPosition, targetPosition, elapsedTime / openDuration);
+            doorModel.transform.position = Vector3.Lerp(startPosition, targetPosition, elapsedTime / openDuration);
             elapsedTime += Time.deltaTime;
             yield return null;
         }
 
-        transform.position = targetPosition;
+        doorModel.transform.position = targetPosition;
         animating = false;
     }
 

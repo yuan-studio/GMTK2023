@@ -145,7 +145,6 @@ public class AgentController : MonoBehaviour
         {
             OnStateChange();
         }
-        Debug.Log(currentState);
 
         switch (currentState)
         {
