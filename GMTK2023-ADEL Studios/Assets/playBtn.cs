@@ -5,9 +5,25 @@ using UnityEngine.SceneManagement;
 
 public class playBtn : MonoBehaviour
 {
+    public GameObject MainMenu;
+    public GameObject TutorialMenu;
+
+
     public void startGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void tutorialStart()
+    {
+        MainMenu.SetActive(false);
+        TutorialMenu.SetActive(true);
+    }
+
+    public void quitTutorial()
+    {
+        MainMenu.SetActive(true);
+        TutorialMenu.SetActive(false);
     }
 
     public void quitGame()
@@ -16,4 +32,3 @@ public class playBtn : MonoBehaviour
         Application.Quit();
     }
 }
- 
