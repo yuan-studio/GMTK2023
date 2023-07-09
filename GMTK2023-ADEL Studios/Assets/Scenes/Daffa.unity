@@ -402,6 +402,7 @@ GameObject:
   - component: {fileID: 51242829}
   - component: {fileID: 51242828}
   - component: {fileID: 51242827}
+  - component: {fileID: 51242833}
   m_Layer: 0
   m_Name: Camera (30)
   m_TagString: Untagged
@@ -516,7 +517,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 80
   orthographic: 0
@@ -536,6 +537,23 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &51242833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51242825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40569323507358c48b2830bc45286608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactRange: 8
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  cam: {fileID: 0}
 --- !u!1 &61828962
 GameObject:
   m_ObjectHideFlags: 0
@@ -698,8 +716,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -781,6 +799,7 @@ GameObject:
   - component: {fileID: 86958568}
   - component: {fileID: 86958570}
   - component: {fileID: 86958569}
+  - component: {fileID: 86958571}
   m_Layer: 0
   m_Name: Camera (12)
   m_TagString: Untagged
@@ -827,7 +846,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 80
   orthographic: 0
@@ -915,6 +934,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shift: 0.175
+--- !u!114 &86958571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86958562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40569323507358c48b2830bc45286608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactRange: 8
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  cam: {fileID: 0}
 --- !u!1 &90725402
 GameObject:
   m_ObjectHideFlags: 0
@@ -982,8 +1018,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1065,6 +1101,7 @@ GameObject:
   - component: {fileID: 103010567}
   - component: {fileID: 103010569}
   - component: {fileID: 103010568}
+  - component: {fileID: 103010570}
   m_Layer: 0
   m_Name: Camera (21)
   m_TagString: Untagged
@@ -1111,7 +1148,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 80
   orthographic: 0
@@ -1199,6 +1236,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shift: 0.175
+--- !u!114 &103010570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103010561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40569323507358c48b2830bc45286608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactRange: 8
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  cam: {fileID: 0}
 --- !u!1 &109696800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1266,8 +1320,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1401,8 +1455,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1666,8 +1720,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1801,8 +1855,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1936,8 +1990,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2124,8 +2178,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2259,8 +2313,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2327,6 +2381,113 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 202638788}
   m_CullTransparentMesh: 1
+--- !u!1 &218001088
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 218001089}
+  m_Layer: 0
+  m_Name: Gate
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &218001089
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218001088}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 284641405}
+  - {fileID: 1494639729}
+  m_Father: {fileID: 2090518982}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!1 &222844678
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 222844679}
+  - component: {fileID: 222844681}
+  - component: {fileID: 222844680}
+  m_Layer: 9
+  m_Name: Door (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &222844679
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222844678}
+  m_LocalRotation: {x: -0, y: 0.70707846, z: -0, w: 0.70713514}
+  m_LocalPosition: {x: -5.22, y: 12.957, z: -9.39}
+  m_LocalScale: {x: 0.7270905, y: 0.9346884, z: 0.7270905}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1679834611}
+  - {fileID: 670687000}
+  m_Father: {fileID: 1901967620}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 89.995, z: 0}
+--- !u!114 &222844680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222844678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b5ed923c0e7a04e89b9378130d7ffb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: 69877f765cfb4424db68b91af31ef4cf, type: 3}
+  UI: {fileID: 0}
+  doorModel: {fileID: 1679834610}
+  openAmount: 3.3
+  openDuration: 0.75
+  isOpen: 0
+--- !u!65 &222844681
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222844678}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1317377, y: 3.3816175, z: 0.20843458}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &253195850
 GameObject:
   m_ObjectHideFlags: 0
@@ -2447,8 +2608,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2568,6 +2729,112 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.100585, y: 3, z: 1.98381}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &284641404
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 284641405}
+  - component: {fileID: 284641408}
+  - component: {fileID: 284641407}
+  - component: {fileID: 284641406}
+  m_Layer: 8
+  m_Name: wing_1
+  m_TagString: Obstacle
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &284641405
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284641404}
+  m_LocalRotation: {x: 0.70710665, y: 0, z: -0, w: 0.7071069}
+  m_LocalPosition: {x: -0, y: 0, z: -0.0006}
+  m_LocalScale: {x: 10000, y: 5764.725, z: 10000}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 218001089}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &284641406
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284641404}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4644180876690810107, guid: db1e944fe66d1db42b29ea7cfa30da02, type: 3}
+--- !u!23 &284641407
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284641404}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 65d300d559225c5409ad96d1497b5a0a, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &284641408
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284641404}
+  m_Mesh: {fileID: -4644180876690810107, guid: db1e944fe66d1db42b29ea7cfa30da02, type: 3}
 --- !u!1 &289917518
 GameObject:
   m_ObjectHideFlags: 0
@@ -2583,6 +2850,7 @@ GameObject:
   - component: {fileID: 289917524}
   - component: {fileID: 289917526}
   - component: {fileID: 289917525}
+  - component: {fileID: 289917527}
   m_Layer: 0
   m_Name: Camera (6)
   m_TagString: Untagged
@@ -2629,7 +2897,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 80
   orthographic: 0
@@ -2717,6 +2985,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shift: 0.175
+--- !u!114 &289917527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289917518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40569323507358c48b2830bc45286608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactRange: 8
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  cam: {fileID: 0}
 --- !u!1 &324561100
 GameObject:
   m_ObjectHideFlags: 0
@@ -2732,6 +3017,7 @@ GameObject:
   - component: {fileID: 324561106}
   - component: {fileID: 324561108}
   - component: {fileID: 324561107}
+  - component: {fileID: 324561109}
   m_Layer: 0
   m_Name: Camera (29)
   m_TagString: Untagged
@@ -2778,7 +3064,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 80
   orthographic: 0
@@ -2866,6 +3152,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shift: 0.175
+--- !u!114 &324561109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324561100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40569323507358c48b2830bc45286608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactRange: 8
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  cam: {fileID: 0}
 --- !u!1 &325198141
 GameObject:
   m_ObjectHideFlags: 0
@@ -2934,6 +3237,7 @@ GameObject:
   - component: {fileID: 348956259}
   - component: {fileID: 348956261}
   - component: {fileID: 348956260}
+  - component: {fileID: 348956262}
   m_Layer: 0
   m_Name: Camera (15)
   m_TagString: Untagged
@@ -2980,7 +3284,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 80
   orthographic: 0
@@ -3068,6 +3372,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shift: 0.175
+--- !u!114 &348956262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348956253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40569323507358c48b2830bc45286608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactRange: 8
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  cam: {fileID: 0}
 --- !u!1 &375214464
 GameObject:
   m_ObjectHideFlags: 0
@@ -3188,8 +3509,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3323,8 +3644,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3552,8 +3873,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3794,6 +4115,7 @@ GameObject:
   - component: {fileID: 518975646}
   - component: {fileID: 518975648}
   - component: {fileID: 518975647}
+  - component: {fileID: 518975649}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -3840,7 +4162,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 80
   orthographic: 0
@@ -3928,6 +4250,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shift: 0.175
+--- !u!114 &518975649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518975640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40569323507358c48b2830bc45286608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactRange: 8
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  cam: {fileID: 0}
 --- !u!1 &531452943
 GameObject:
   m_ObjectHideFlags: 0
@@ -3995,8 +4334,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4078,6 +4417,7 @@ GameObject:
   - component: {fileID: 543127425}
   - component: {fileID: 543127427}
   - component: {fileID: 543127426}
+  - component: {fileID: 543127428}
   m_Layer: 0
   m_Name: Camera (8)
   m_TagString: Untagged
@@ -4124,7 +4464,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 80
   orthographic: 0
@@ -4212,6 +4552,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shift: 0.175
+--- !u!114 &543127428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543127419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40569323507358c48b2830bc45286608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactRange: 8
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  cam: {fileID: 0}
 --- !u!1 &547758126
 GameObject:
   m_ObjectHideFlags: 0
@@ -4385,8 +4742,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4468,6 +4825,7 @@ GameObject:
   - component: {fileID: 572365995}
   - component: {fileID: 572365997}
   - component: {fileID: 572365996}
+  - component: {fileID: 572365998}
   m_Layer: 0
   m_Name: Camera (24)
   m_TagString: Untagged
@@ -4514,7 +4872,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 80
   orthographic: 0
@@ -4602,6 +4960,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shift: 0.175
+--- !u!114 &572365998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572365989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40569323507358c48b2830bc45286608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactRange: 8
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  cam: {fileID: 0}
 --- !u!1 &574101911
 GameObject:
   m_ObjectHideFlags: 0
@@ -4617,6 +4992,7 @@ GameObject:
   - component: {fileID: 574101917}
   - component: {fileID: 574101919}
   - component: {fileID: 574101918}
+  - component: {fileID: 574101920}
   m_Layer: 0
   m_Name: Camera (16)
   m_TagString: Untagged
@@ -4663,7 +5039,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 80
   orthographic: 0
@@ -4751,6 +5127,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shift: 0.175
+--- !u!114 &574101920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574101911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40569323507358c48b2830bc45286608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactRange: 8
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  cam: {fileID: 0}
 --- !u!1 &599693572
 GameObject:
   m_ObjectHideFlags: 0
@@ -4766,6 +5159,7 @@ GameObject:
   - component: {fileID: 599693578}
   - component: {fileID: 599693580}
   - component: {fileID: 599693579}
+  - component: {fileID: 599693581}
   m_Layer: 0
   m_Name: Camera (22)
   m_TagString: Untagged
@@ -4812,7 +5206,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 80
   orthographic: 0
@@ -4900,6 +5294,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shift: 0.175
+--- !u!114 &599693581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599693572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40569323507358c48b2830bc45286608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactRange: 8
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  cam: {fileID: 0}
 --- !u!1 &603814569
 GameObject:
   m_ObjectHideFlags: 0
@@ -5020,8 +5431,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -5155,8 +5566,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -5238,6 +5649,7 @@ GameObject:
   - component: {fileID: 647350320}
   - component: {fileID: 647350322}
   - component: {fileID: 647350321}
+  - component: {fileID: 647350323}
   m_Layer: 0
   m_Name: Camera (5)
   m_TagString: Untagged
@@ -5284,7 +5696,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 80
   orthographic: 0
@@ -5372,6 +5784,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shift: 0.175
+--- !u!114 &647350323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647350314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40569323507358c48b2830bc45286608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactRange: 8
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  cam: {fileID: 0}
 --- !u!1 &649669505
 GameObject:
   m_ObjectHideFlags: 0
@@ -5439,8 +5868,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -5522,6 +5951,7 @@ GameObject:
   - component: {fileID: 650701559}
   - component: {fileID: 650701561}
   - component: {fileID: 650701560}
+  - component: {fileID: 650701562}
   m_Layer: 0
   m_Name: Camera (23)
   m_TagString: Untagged
@@ -5568,7 +5998,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 80
   orthographic: 0
@@ -5656,6 +6086,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shift: 0.175
+--- !u!114 &650701562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650701553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40569323507358c48b2830bc45286608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactRange: 8
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  cam: {fileID: 0}
 --- !u!1 &652304295
 GameObject:
   m_ObjectHideFlags: 0
@@ -5776,8 +6223,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -5905,6 +6352,89 @@ LightingSettings:
   m_PVRFilteringAtrousPositionSigmaAO: 1
   m_PVRTiledBaking: 0
   m_RespectSceneVisibilityWhenBakingGI: 0
+--- !u!1 &670686999
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 670687000}
+  - component: {fileID: 670687002}
+  - component: {fileID: 670687001}
+  m_Layer: 0
+  m_Name: Frame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &670687000
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670686999}
+  m_LocalRotation: {x: 0.49999994, y: -0.5000001, z: 0.49999994, w: 0.5000001}
+  m_LocalPosition: {x: 0, y: 0, z: 0.09100008}
+  m_LocalScale: {x: 10000, y: 5764.724, z: 9999.998}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 222844679}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &670687001
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670686999}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 62b90f03f2c79c24289d68812fd45d3d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &670687002
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670686999}
+  m_Mesh: {fileID: -5691018956405108169, guid: db1e944fe66d1db42b29ea7cfa30da02, type: 3}
 --- !u!1 &673712263
 GameObject:
   m_ObjectHideFlags: 0
@@ -5972,8 +6502,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6055,6 +6585,7 @@ GameObject:
   - component: {fileID: 707938104}
   - component: {fileID: 707938106}
   - component: {fileID: 707938105}
+  - component: {fileID: 707938107}
   m_Layer: 0
   m_Name: Camera (17)
   m_TagString: Untagged
@@ -6101,7 +6632,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 80
   orthographic: 0
@@ -6189,6 +6720,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shift: 0.175
+--- !u!114 &707938107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707938098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40569323507358c48b2830bc45286608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactRange: 8
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  cam: {fileID: 0}
 --- !u!1 &722942913
 GameObject:
   m_ObjectHideFlags: 0
@@ -6256,8 +6804,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6444,8 +6992,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6518,7 +7066,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26782
+  m_Name: pb_Mesh32064
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -6977,8 +7525,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -7259,8 +7807,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -7394,8 +7942,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -7477,6 +8025,7 @@ GameObject:
   - component: {fileID: 869713070}
   - component: {fileID: 869713072}
   - component: {fileID: 869713071}
+  - component: {fileID: 869713073}
   m_Layer: 0
   m_Name: Camera (26)
   m_TagString: Untagged
@@ -7523,7 +8072,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 80
   orthographic: 0
@@ -7611,6 +8160,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shift: 0.175
+--- !u!114 &869713073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869713064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40569323507358c48b2830bc45286608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactRange: 8
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  cam: {fileID: 0}
 --- !u!1 &876434437
 GameObject:
   m_ObjectHideFlags: 0
@@ -7943,8 +8509,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8078,8 +8644,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8213,8 +8779,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8348,8 +8914,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8483,8 +9049,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8765,8 +9331,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8900,8 +9466,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8968,6 +9534,112 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1002856394}
   m_CullTransparentMesh: 1
+--- !u!1 &1035818363
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1035818364}
+  - component: {fileID: 1035818367}
+  - component: {fileID: 1035818366}
+  - component: {fileID: 1035818365}
+  m_Layer: 8
+  m_Name: wing_2
+  m_TagString: Obstacle
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1035818364
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035818363}
+  m_LocalRotation: {x: 0.70710665, y: 0, z: -0, w: 0.7071069}
+  m_LocalPosition: {x: -0, y: 0, z: -0.0006}
+  m_LocalScale: {x: 10000, y: 5764.725, z: 10000}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1679834611}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &1035818365
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035818363}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8078111688712367839, guid: db1e944fe66d1db42b29ea7cfa30da02, type: 3}
+--- !u!23 &1035818366
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035818363}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 65d300d559225c5409ad96d1497b5a0a, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1035818367
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035818363}
+  m_Mesh: {fileID: -8078111688712367839, guid: db1e944fe66d1db42b29ea7cfa30da02, type: 3}
 --- !u!1 &1038464688
 GameObject:
   m_ObjectHideFlags: 0
@@ -9103,8 +9775,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -9238,8 +9910,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -9373,8 +10045,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -9603,6 +10275,7 @@ GameObject:
   - component: {fileID: 1144125370}
   - component: {fileID: 1144125372}
   - component: {fileID: 1144125371}
+  - component: {fileID: 1144125373}
   m_Layer: 0
   m_Name: Camera (18)
   m_TagString: Untagged
@@ -9649,7 +10322,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 80
   orthographic: 0
@@ -9737,6 +10410,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shift: 0.175
+--- !u!114 &1144125373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144125364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40569323507358c48b2830bc45286608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactRange: 8
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  cam: {fileID: 0}
 --- !u!1 &1154425253
 GameObject:
   m_ObjectHideFlags: 0
@@ -9857,8 +10547,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -10046,6 +10736,7 @@ GameObject:
   - component: {fileID: 1209376218}
   - component: {fileID: 1209376220}
   - component: {fileID: 1209376219}
+  - component: {fileID: 1209376221}
   m_Layer: 0
   m_Name: Camera (20)
   m_TagString: Untagged
@@ -10092,7 +10783,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 80
   orthographic: 0
@@ -10180,6 +10871,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shift: 0.175
+--- !u!114 &1209376221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209376212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40569323507358c48b2830bc45286608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactRange: 8
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  cam: {fileID: 0}
 --- !u!1 &1248593938
 GameObject:
   m_ObjectHideFlags: 0
@@ -10247,8 +10955,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -10570,8 +11278,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -10758,8 +11466,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -10826,6 +11534,112 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1347063127}
   m_CullTransparentMesh: 1
+--- !u!1 &1349920591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1349920592}
+  - component: {fileID: 1349920595}
+  - component: {fileID: 1349920594}
+  - component: {fileID: 1349920593}
+  m_Layer: 8
+  m_Name: wing_1
+  m_TagString: Obstacle
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1349920592
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349920591}
+  m_LocalRotation: {x: 0.70710665, y: 0, z: -0, w: 0.7071069}
+  m_LocalPosition: {x: -0, y: 0, z: -0.0006}
+  m_LocalScale: {x: 10000, y: 5764.725, z: 10000}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1679834611}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &1349920593
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349920591}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4644180876690810107, guid: db1e944fe66d1db42b29ea7cfa30da02, type: 3}
+--- !u!23 &1349920594
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349920591}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 65d300d559225c5409ad96d1497b5a0a, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1349920595
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349920591}
+  m_Mesh: {fileID: -4644180876690810107, guid: db1e944fe66d1db42b29ea7cfa30da02, type: 3}
 --- !u!1 &1357857588
 GameObject:
   m_ObjectHideFlags: 0
@@ -11051,8 +11865,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -11186,8 +12000,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -11269,6 +12083,7 @@ GameObject:
   - component: {fileID: 1384955199}
   - component: {fileID: 1384955201}
   - component: {fileID: 1384955200}
+  - component: {fileID: 1384955202}
   m_Layer: 0
   m_Name: Camera (9)
   m_TagString: Untagged
@@ -11315,7 +12130,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 80
   orthographic: 0
@@ -11403,6 +12218,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shift: 0.175
+--- !u!114 &1384955202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384955193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40569323507358c48b2830bc45286608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactRange: 8
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  cam: {fileID: 0}
 --- !u!1 &1393260122
 GameObject:
   m_ObjectHideFlags: 0
@@ -11661,8 +12493,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -11797,6 +12629,7 @@ GameObject:
   - component: {fileID: 1426570242}
   - component: {fileID: 1426570244}
   - component: {fileID: 1426570243}
+  - component: {fileID: 1426570245}
   m_Layer: 0
   m_Name: Camera (1)
   m_TagString: Untagged
@@ -11843,7 +12676,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 80
   orthographic: 0
@@ -11931,6 +12764,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shift: 0.175
+--- !u!114 &1426570245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426570236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40569323507358c48b2830bc45286608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactRange: 8
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  cam: {fileID: 0}
 --- !u!1 &1435720846
 GameObject:
   m_ObjectHideFlags: 0
@@ -12153,6 +13003,112 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 5
   m_ShadowAngle: 0
+--- !u!1 &1494639728
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1494639729}
+  - component: {fileID: 1494639732}
+  - component: {fileID: 1494639731}
+  - component: {fileID: 1494639730}
+  m_Layer: 8
+  m_Name: wing_2
+  m_TagString: Obstacle
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1494639729
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494639728}
+  m_LocalRotation: {x: 0.70710665, y: 0, z: -0, w: 0.7071069}
+  m_LocalPosition: {x: -0, y: 0, z: -0.0006}
+  m_LocalScale: {x: 10000, y: 5764.725, z: 10000}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 218001089}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &1494639730
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494639728}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8078111688712367839, guid: db1e944fe66d1db42b29ea7cfa30da02, type: 3}
+--- !u!23 &1494639731
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494639728}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 65d300d559225c5409ad96d1497b5a0a, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1494639732
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494639728}
+  m_Mesh: {fileID: -8078111688712367839, guid: db1e944fe66d1db42b29ea7cfa30da02, type: 3}
 --- !u!1 &1563647492
 GameObject:
   m_ObjectHideFlags: 0
@@ -12220,8 +13176,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -12303,6 +13259,7 @@ GameObject:
   - component: {fileID: 1566305515}
   - component: {fileID: 1566305517}
   - component: {fileID: 1566305516}
+  - component: {fileID: 1566305518}
   m_Layer: 0
   m_Name: Camera (2)
   m_TagString: Untagged
@@ -12349,7 +13306,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 80
   orthographic: 0
@@ -12437,6 +13394,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shift: 0.175
+--- !u!114 &1566305518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566305509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40569323507358c48b2830bc45286608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactRange: 8
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  cam: {fileID: 0}
 --- !u!1 &1577571206
 GameObject:
   m_ObjectHideFlags: 0
@@ -12546,6 +13520,7 @@ GameObject:
   - component: {fileID: 1577728459}
   - component: {fileID: 1577728461}
   - component: {fileID: 1577728460}
+  - component: {fileID: 1577728462}
   m_Layer: 0
   m_Name: Camera (7)
   m_TagString: Untagged
@@ -12592,7 +13567,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 80
   orthographic: 0
@@ -12680,6 +13655,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shift: 0.175
+--- !u!114 &1577728462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577728453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40569323507358c48b2830bc45286608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactRange: 8
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  cam: {fileID: 0}
 --- !u!1 &1594588967
 GameObject:
   m_ObjectHideFlags: 0
@@ -12695,6 +13687,7 @@ GameObject:
   - component: {fileID: 1594588973}
   - component: {fileID: 1594588975}
   - component: {fileID: 1594588974}
+  - component: {fileID: 1594588976}
   m_Layer: 0
   m_Name: Camera (14)
   m_TagString: Untagged
@@ -12741,7 +13734,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 80
   orthographic: 0
@@ -12829,13 +13822,113 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shift: 0.175
+--- !u!114 &1594588976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594588967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40569323507358c48b2830bc45286608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactRange: 8
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  cam: {fileID: 0}
+--- !u!1 &1602613800
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1602613801}
+  - component: {fileID: 1602613803}
+  - component: {fileID: 1602613802}
+  m_Layer: 0
+  m_Name: Frame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1602613801
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602613800}
+  m_LocalRotation: {x: 0.49999994, y: -0.5000001, z: 0.49999994, w: 0.5000001}
+  m_LocalPosition: {x: 0, y: 0, z: 0.09100008}
+  m_LocalScale: {x: 10000, y: 5764.724, z: 9999.998}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2090518982}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1602613802
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602613800}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 62b90f03f2c79c24289d68812fd45d3d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1602613803
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602613800}
+  m_Mesh: {fileID: -5691018956405108169, guid: db1e944fe66d1db42b29ea7cfa30da02, type: 3}
 --- !u!43 &1604311806
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26882
+  m_Name: pb_Mesh32246
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -13061,8 +14154,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -13196,8 +14289,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -13279,6 +14372,7 @@ GameObject:
   - component: {fileID: 1670960156}
   - component: {fileID: 1670960158}
   - component: {fileID: 1670960157}
+  - component: {fileID: 1670960159}
   m_Layer: 0
   m_Name: Camera (25)
   m_TagString: Untagged
@@ -13325,7 +14419,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 80
   orthographic: 0
@@ -13413,6 +14507,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shift: 0.175
+--- !u!114 &1670960159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670960150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40569323507358c48b2830bc45286608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactRange: 8
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  cam: {fileID: 0}
 --- !u!1 &1678788849
 GameObject:
   m_ObjectHideFlags: 0
@@ -13480,8 +14591,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -13548,6 +14659,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1678788849}
   m_CullTransparentMesh: 1
+--- !u!1 &1679834610
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1679834611}
+  m_Layer: 0
+  m_Name: Gate
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1679834611
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679834610}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1349920592}
+  - {fileID: 1035818364}
+  m_Father: {fileID: 222844679}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &1681340560
 GameObject:
   m_ObjectHideFlags: 0
@@ -13627,6 +14771,7 @@ GameObject:
   - component: {fileID: 1691091898}
   - component: {fileID: 1691091900}
   - component: {fileID: 1691091899}
+  - component: {fileID: 1691091901}
   m_Layer: 0
   m_Name: Camera (27)
   m_TagString: Untagged
@@ -13673,7 +14818,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 80
   orthographic: 0
@@ -13761,6 +14906,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shift: 0.175
+--- !u!114 &1691091901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691091892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40569323507358c48b2830bc45286608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactRange: 8
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  cam: {fileID: 0}
 --- !u!1 &1701991123
 GameObject:
   m_ObjectHideFlags: 0
@@ -13828,8 +14990,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -52967,6 +54129,7 @@ GameObject:
   - component: {fileID: 1740154921}
   - component: {fileID: 1740154923}
   - component: {fileID: 1740154922}
+  - component: {fileID: 1740154924}
   m_Layer: 0
   m_Name: Camera (13)
   m_TagString: Untagged
@@ -53013,7 +54176,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 80
   orthographic: 0
@@ -53101,6 +54264,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shift: 0.175
+--- !u!114 &1740154924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740154915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40569323507358c48b2830bc45286608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactRange: 8
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  cam: {fileID: 0}
 --- !u!1 &1778186717
 GameObject:
   m_ObjectHideFlags: 0
@@ -53274,8 +54454,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -53409,8 +54589,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -53544,8 +54724,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -53679,8 +54859,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -53815,6 +54995,7 @@ GameObject:
   - component: {fileID: 1884809894}
   - component: {fileID: 1884809896}
   - component: {fileID: 1884809895}
+  - component: {fileID: 1884809897}
   m_Layer: 0
   m_Name: Camera (10)
   m_TagString: Untagged
@@ -53861,7 +55042,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 80
   orthographic: 0
@@ -53949,6 +55130,56 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shift: 0.175
+--- !u!114 &1884809897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884809888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40569323507358c48b2830bc45286608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactRange: 8
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  cam: {fileID: 0}
+--- !u!1 &1901967619
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1901967620}
+  m_Layer: 0
+  m_Name: Doors
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1901967620
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901967619}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -46.536385, y: -9.944287, z: -9.837627}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2090518982}
+  - {fileID: 222844679}
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1917981696
 GameObject:
   m_ObjectHideFlags: 0
@@ -54070,6 +55301,7 @@ GameObject:
   - component: {fileID: 1927368019}
   - component: {fileID: 1927368021}
   - component: {fileID: 1927368020}
+  - component: {fileID: 1927368022}
   m_Layer: 0
   m_Name: Camera (3)
   m_TagString: Untagged
@@ -54116,7 +55348,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 80
   orthographic: 0
@@ -54204,6 +55436,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shift: 0.175
+--- !u!114 &1927368022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927368013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40569323507358c48b2830bc45286608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactRange: 8
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  cam: {fileID: 0}
 --- !u!1 &1945558812
 GameObject:
   m_ObjectHideFlags: 0
@@ -54271,8 +55520,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -54354,6 +55603,7 @@ GameObject:
   - component: {fileID: 1956725082}
   - component: {fileID: 1956725084}
   - component: {fileID: 1956725083}
+  - component: {fileID: 1956725085}
   m_Layer: 0
   m_Name: Camera (11)
   m_TagString: Untagged
@@ -54400,7 +55650,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 80
   orthographic: 0
@@ -54488,6 +55738,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shift: 0.175
+--- !u!114 &1956725085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956725076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40569323507358c48b2830bc45286608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactRange: 8
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  cam: {fileID: 0}
 --- !u!1 &1960995484
 GameObject:
   m_ObjectHideFlags: 0
@@ -54609,6 +55876,7 @@ GameObject:
   - component: {fileID: 1975943238}
   - component: {fileID: 1975943240}
   - component: {fileID: 1975943239}
+  - component: {fileID: 1975943241}
   m_Layer: 0
   m_Name: Camera (28)
   m_TagString: Untagged
@@ -54655,7 +55923,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 80
   orthographic: 0
@@ -54743,6 +56011,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shift: 0.175
+--- !u!114 &1975943241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975943232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40569323507358c48b2830bc45286608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactRange: 8
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  cam: {fileID: 0}
 --- !u!1 &1981099677
 GameObject:
   m_ObjectHideFlags: 0
@@ -79257,8 +80542,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -79372,6 +80657,7 @@ GameObject:
   - component: {fileID: 2013907306}
   - component: {fileID: 2013907308}
   - component: {fileID: 2013907307}
+  - component: {fileID: 2013907309}
   m_Layer: 0
   m_Name: Camera (19)
   m_TagString: Untagged
@@ -79418,7 +80704,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 80
   orthographic: 0
@@ -79506,6 +80792,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shift: 0.175
+--- !u!114 &2013907309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013907300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40569323507358c48b2830bc45286608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactRange: 8
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  cam: {fileID: 0}
 --- !u!1 &2022727981
 GameObject:
   m_ObjectHideFlags: 0
@@ -79759,6 +81062,80 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.100585, y: 3, z: 1.98381}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &2090518981
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2090518982}
+  - component: {fileID: 2090518984}
+  - component: {fileID: 2090518983}
+  m_Layer: 9
+  m_Name: Door
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2090518982
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090518981}
+  m_LocalRotation: {x: -0, y: 0.70707846, z: -0, w: 0.70713514}
+  m_LocalPosition: {x: -3.6, y: 12.957, z: -7.03}
+  m_LocalScale: {x: 0.7270905, y: 0.9346884, z: 0.7270905}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 218001089}
+  - {fileID: 1602613801}
+  m_Father: {fileID: 1901967620}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 89.995, z: 0}
+--- !u!114 &2090518983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090518981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b5ed923c0e7a04e89b9378130d7ffb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: 69877f765cfb4424db68b91af31ef4cf, type: 3}
+  UI: {fileID: 0}
+  doorModel: {fileID: 218001088}
+  openAmount: 3.3
+  openDuration: 0.75
+  isOpen: 0
+--- !u!65 &2090518984
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090518981}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1317377, y: 3.3816175, z: 0.20843458}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2108327724
 GameObject:
   m_ObjectHideFlags: 0
@@ -79774,6 +81151,7 @@ GameObject:
   - component: {fileID: 2108327730}
   - component: {fileID: 2108327732}
   - component: {fileID: 2108327731}
+  - component: {fileID: 2108327733}
   m_Layer: 0
   m_Name: Camera (4)
   m_TagString: Untagged
@@ -79820,7 +81198,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 80
   orthographic: 0
@@ -79908,6 +81286,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shift: 0.175
+--- !u!114 &2108327733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108327724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40569323507358c48b2830bc45286608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactRange: 8
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  cam: {fileID: 0}
 --- !u!1 &2112956482
 GameObject:
   m_ObjectHideFlags: 0
@@ -79975,8 +81370,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -80110,8 +81505,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -80245,8 +81640,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3539992576
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.827451}
+    rgba: 4282400832
+  m_fontColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
