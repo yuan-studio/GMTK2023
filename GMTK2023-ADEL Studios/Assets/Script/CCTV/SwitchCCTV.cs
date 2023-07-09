@@ -74,8 +74,6 @@ public class SwitchCCTV : MonoBehaviour
         cameras.Add(camera29);
         cameras.Add(camera30);
 
-        switchSound = Resources.Load<AudioClip>("audio/switch-click-and-beep-001a-11602 fix");
-
         
         for (int i = 1; i < cameras.Count; i++)
         {
@@ -89,17 +87,20 @@ public class SwitchCCTV : MonoBehaviour
         if (scroll > 0)
         {
             SwitchCamera(1);
+            audioSource.PlayOneShot(switchSound);
         }
         else if (scroll < 0)
         {
             SwitchCamera(-1);
+            audioSource.PlayOneShot(switchSound);
         }
     }
 
     void SwitchCamera(int direction)
     {
+        
         cameras[currentCameraIndex].gameObject.SetActive(false);
-        audioSource.PlayOneShot(switchSound);
+        
 
         currentCameraIndex += direction;
         if (currentCameraIndex < 0)
