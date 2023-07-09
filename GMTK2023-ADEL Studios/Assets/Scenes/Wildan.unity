@@ -894,7 +894,7 @@ GameObject:
   - component: {fileID: 265093636}
   - component: {fileID: 265093635}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: bigMonitor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2732,7 +2732,7 @@ GameObject:
   - component: {fileID: 936670776}
   - component: {fileID: 936670775}
   m_Layer: 0
-  m_Name: Camera (1)
+  m_Name: Map
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6037,7 +6037,7 @@ GameObject:
   - component: {fileID: 1827804999}
   - component: {fileID: 1827804998}
   m_Layer: 0
-  m_Name: Camera (2)
+  m_Name: GPS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
