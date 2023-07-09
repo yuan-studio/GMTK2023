@@ -4,15 +4,33 @@ using UnityEngine;
 
 public class EnemyScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private GameObject agent;
+    [SerializeField] private bool isBlind = false;
+    [SerializeField] private float sightRange = 15f;
+    [SerializeField] private float sightAngle = 45f;
+
+
+    public void setBlind(bool b)
     {
-        
+        isBlind = b;
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
-        
+        if (Vector3.Distance(agent.transform.position, transform.position) <= sightRange && !isBlind)
+        {
+            if (Vector3.Angle(transform.forward, (agent.transform.position - transform.position)) <= sightAngle)
+            {
+                RaycastHit hit;
+                if (Physics.Raycast(transform.position, (agent.transform.position - transform.position), out hit, sightRange))
+                {
+                    if (hit.transform.CompareTag("Agent"))
+                    {
+                        Debug.Log("Seeing agent");
+                    }
+                }
+            }
+        }
     }
 }
