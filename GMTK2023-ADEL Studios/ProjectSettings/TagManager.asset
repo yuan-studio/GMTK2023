@@ -7,6 +7,7 @@ TagManager:
   - DecisionArea
   - Obstacle
   - Agent
+  - Door
   layers:
   - Default
   - TransparentFX

@@ -12,6 +12,7 @@ public class AgentController : MonoBehaviour
     [SerializeField] private Animator animatorAgent;
     [SerializeField] private string decisionTag;
     [SerializeField] private string obstacleTag;
+    [SerializeField] private string doorTag;
     [SerializeField] private LayerMask obstacleLayer;
     [SerializeField] private DIRECTION initialDirection;
     [SerializeField] private STATES initialState;
@@ -44,13 +45,16 @@ public class AgentController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("triggered");
         if (other.transform.CompareTag(decisionTag))
         {
+            Debug.Log("entered decision zone");
             Agent.SetDestination(transform.position + targetPosition * 1.5f);
             ChangeState(STATES.PENDING);
         }
         else if (other.transform.CompareTag(obstacleTag) && currentState.Equals(STATES.WALKING))
         {
+            Debug.Log("reversed direction because of " + other.name);
             reverseDirection();
         }
     }
