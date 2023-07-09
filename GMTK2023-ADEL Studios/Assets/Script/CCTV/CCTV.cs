@@ -8,9 +8,9 @@ public class CCTV : MonoBehaviour
     bool isMoving = false;
     float inputX, inputY;
     float currentRotationX = 0f, currentRotationY = 0f;
-    float maxRotationX = 25f;
+    float maxRotationX = 65f;
     float maxRotationY = 5f;
-    float minRotationY = -10f;
+    float minRotationY = -15f;
 
     void Update()
     {
