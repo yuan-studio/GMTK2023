@@ -64,6 +64,34 @@ public class AgentController : MonoBehaviour
         this.currentState = s;
     }
 
+    private Vector3 ClampDirection(Vector3 direction)
+    {
+        Vector3[] targetDirections = new Vector3[]
+        {
+            transform.forward,
+            transform.right,
+            -transform.right,
+            -transform.forward
+        };
+
+        float maxDot = float.MinValue;
+        int nearestDirectionIndex = -1;
+
+        // Find the direction with the highest dot product
+        for (int i = 0; i < targetDirections.Length; i++)
+        {
+            float dot = Vector3.Dot(direction, targetDirections[i]);
+            if (dot > maxDot)
+            {
+                maxDot = dot;
+                nearestDirectionIndex = i;
+            }
+        }
+
+        // Return the nearest direction
+        return targetDirections[nearestDirectionIndex];
+    }
+
     private void OnStateChange()
     {
         switch (currentState)
@@ -88,7 +116,7 @@ public class AgentController : MonoBehaviour
 
     private void reverseDirection()
     {
-        targetPosition = -targetPosition;
+        targetPosition = ClampDirection(-targetPosition);
     }
 
     private bool CanWalkTowards()
