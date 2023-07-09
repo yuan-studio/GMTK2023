@@ -9,6 +9,7 @@ using static AgentController;
 public class AgentController : MonoBehaviour
 {
     [SerializeField] private NavMeshAgent Agent;
+    [SerializeField] private Animator animatorAgent;
     [SerializeField] private string decisionTag;
     [SerializeField] private string obstacleTag;
     [SerializeField] private LayerMask obstacleLayer;
@@ -138,6 +139,8 @@ public class AgentController : MonoBehaviour
 
     void Update()
     {
+        animatorAgent.SetBool("Moving", Agent.velocity.magnitude > 0f);
+
         if (currentState != previousState)
         {
             OnStateChange();
