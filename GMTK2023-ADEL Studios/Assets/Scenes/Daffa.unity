@@ -297,7 +297,7 @@ GameObject:
   - component: {fileID: 13789676}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1480,7 +1480,7 @@ GameObject:
   - component: {fileID: 85348319}
   m_Layer: 9
   m_Name: Door (23)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1721,7 +1721,7 @@ GameObject:
   - component: {fileID: 89504053}
   m_Layer: 9
   m_Name: Door (43)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2473,7 +2473,7 @@ GameObject:
   - component: {fileID: 123144461}
   m_Layer: 9
   m_Name: Door (4)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2865,7 +2865,7 @@ GameObject:
   - component: {fileID: 150393992}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3621,7 +3621,7 @@ GameObject:
   - component: {fileID: 187536973}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3707,7 +3707,7 @@ GameObject:
   - component: {fileID: 190565990}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4010,7 +4010,7 @@ GameObject:
   - component: {fileID: 203472474}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4361,7 +4361,7 @@ GameObject:
   - component: {fileID: 218001089}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4502,7 +4502,7 @@ GameObject:
   - component: {fileID: 222844680}
   m_Layer: 9
   m_Name: Door (1)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4657,7 +4657,7 @@ GameObject:
   - component: {fileID: 236509734}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5173,7 +5173,7 @@ GameObject:
   - component: {fileID: 261598054}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5365,7 +5365,7 @@ GameObject:
   - component: {fileID: 280288372}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5754,7 +5754,7 @@ GameObject:
   - component: {fileID: 291278733}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5789,7 +5789,7 @@ GameObject:
   - component: {fileID: 295403163}
   m_Layer: 9
   m_Name: Door (37)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5861,7 +5861,7 @@ GameObject:
   - component: {fileID: 302440496}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6896,7 +6896,7 @@ GameObject:
   - component: {fileID: 352260589}
   m_Layer: 9
   m_Name: Door (21)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6970,7 +6970,7 @@ GameObject:
   - component: {fileID: 359247835}
   m_Layer: 9
   m_Name: Door (9)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7042,7 +7042,7 @@ GameObject:
   - component: {fileID: 360108801}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7423,7 +7423,7 @@ GameObject:
   - component: {fileID: 395148975}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7593,7 +7593,7 @@ GameObject:
   - component: {fileID: 401466560}
   m_Layer: 9
   m_Name: Door (17)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7908,7 +7908,7 @@ GameObject:
   - component: {fileID: 423709406}
   m_Layer: 9
   m_Name: Door (15)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8716,7 +8716,7 @@ GameObject:
   - component: {fileID: 462424545}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8802,7 +8802,7 @@ GameObject:
   - component: {fileID: 473056835}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8837,7 +8837,7 @@ GameObject:
   - component: {fileID: 474042908}
   m_Layer: 9
   m_Name: Door (24)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9017,7 +9017,7 @@ GameObject:
   - component: {fileID: 484148304}
   m_Layer: 9
   m_Name: Door (2)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9142,7 +9142,7 @@ GameObject:
   - component: {fileID: 497061569}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10123,7 +10123,7 @@ GameObject:
   - component: {fileID: 559463094}
   m_Layer: 9
   m_Name: Door (36)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10664,7 +10664,7 @@ GameObject:
   - component: {fileID: 574111147}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10780,7 +10780,7 @@ GameObject:
   - component: {fileID: 580392406}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11833,7 +11833,7 @@ GameObject:
   - component: {fileID: 639617793}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11972,7 +11972,7 @@ GameObject:
   - component: {fileID: 647179893}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12580,7 +12580,7 @@ GameObject:
   - component: {fileID: 651484460}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13839,7 +13839,7 @@ GameObject:
   - component: {fileID: 720800340}
   m_Layer: 9
   m_Name: Door (28)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14046,7 +14046,7 @@ GameObject:
   - component: {fileID: 722943580}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14904,7 +14904,7 @@ GameObject:
   - component: {fileID: 738431071}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15045,7 +15045,7 @@ GameObject:
   - component: {fileID: 744117563}
   m_Layer: 9
   m_Name: Door (22)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15119,7 +15119,7 @@ GameObject:
   - component: {fileID: 749201780}
   m_Layer: 9
   m_Name: Door (31)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15710,7 +15710,7 @@ GameObject:
   - component: {fileID: 783266207}
   m_Layer: 9
   m_Name: Door (16)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15782,7 +15782,7 @@ GameObject:
   - component: {fileID: 783526236}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16044,7 +16044,7 @@ GameObject:
   - component: {fileID: 808212209}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16374,7 +16374,7 @@ GameObject:
   - component: {fileID: 827552832}
   m_Layer: 9
   m_Name: Door (14)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17043,7 +17043,7 @@ GameObject:
   - component: {fileID: 858022782}
   m_Layer: 9
   m_Name: Door (19)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17494,7 +17494,7 @@ GameObject:
   - component: {fileID: 871901181}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17529,7 +17529,7 @@ GameObject:
   - component: {fileID: 872978860}
   m_Layer: 9
   m_Name: Door (29)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17709,7 +17709,7 @@ GameObject:
   - component: {fileID: 883516612}
   m_Layer: 9
   m_Name: Door (39)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17942,7 +17942,7 @@ GameObject:
   - component: {fileID: 913661172}
   m_Layer: 9
   m_Name: Door (5)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19620,7 +19620,7 @@ GameObject:
   - component: {fileID: 956190515}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19842,7 +19842,7 @@ GameObject:
   - component: {fileID: 980663794}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20137,7 +20137,7 @@ GameObject:
   - component: {fileID: 988801738}
   m_Layer: 9
   m_Name: Door (7)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20534,7 +20534,7 @@ GameObject:
   - component: {fileID: 1005858917}
   m_Layer: 9
   m_Name: Door (27)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20608,7 +20608,7 @@ GameObject:
   - component: {fileID: 1010744001}
   m_Layer: 9
   m_Name: Door (54)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20894,7 +20894,7 @@ GameObject:
   - component: {fileID: 1017819094}
   m_Layer: 9
   m_Name: Door (44)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21414,7 +21414,7 @@ GameObject:
   - component: {fileID: 1044757187}
   m_Layer: 9
   m_Name: Door (45)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21488,7 +21488,7 @@ GameObject:
   - component: {fileID: 1053155392}
   m_Layer: 9
   m_Name: Door (50)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21992,7 +21992,7 @@ GameObject:
   - component: {fileID: 1086028611}
   m_Layer: 9
   m_Name: Door (49)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22199,7 +22199,7 @@ GameObject:
   - component: {fileID: 1095184016}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22234,7 +22234,7 @@ GameObject:
   - component: {fileID: 1100074667}
   m_Layer: 9
   m_Name: Door (42)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22441,7 +22441,7 @@ GameObject:
   - component: {fileID: 1103347840}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22635,7 +22635,7 @@ GameObject:
   - component: {fileID: 1112421823}
   m_Layer: 9
   m_Name: Door (46)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22803,7 +22803,7 @@ GameObject:
   - component: {fileID: 1116077651}
   m_Layer: 9
   m_Name: Door (8)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22875,7 +22875,7 @@ GameObject:
   - component: {fileID: 1131783616}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23348,7 +23348,7 @@ GameObject:
   - component: {fileID: 1163628365}
   m_Layer: 9
   m_Name: Door (11)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23556,7 +23556,7 @@ GameObject:
   - component: {fileID: 1173617133}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24021,7 +24021,7 @@ GameObject:
   - component: {fileID: 1211070239}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24054,7 +24054,7 @@ GameObject:
   - component: {fileID: 1244232845}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24222,7 +24222,7 @@ GameObject:
   - component: {fileID: 1263151709}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24469,7 +24469,7 @@ GameObject:
   - component: {fileID: 1289136848}
   m_Layer: 9
   m_Name: Door (13)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24543,7 +24543,7 @@ GameObject:
   - component: {fileID: 1294214450}
   m_Layer: 9
   m_Name: Door (51)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24805,7 +24805,7 @@ GameObject:
   - component: {fileID: 1311646933}
   m_Layer: 9
   m_Name: Door (25)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25148,7 +25148,7 @@ GameObject:
   - component: {fileID: 1335488775}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25318,7 +25318,7 @@ GameObject:
   - component: {fileID: 1349370486}
   m_Layer: 9
   m_Name: Door (41)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25602,7 +25602,7 @@ GameObject:
   - component: {fileID: 1350849742}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26888,7 +26888,7 @@ GameObject:
   - component: {fileID: 1407571647}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27082,7 +27082,7 @@ GameObject:
   - component: {fileID: 1414021877}
   m_Layer: 9
   m_Name: Door (38)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27981,7 +27981,7 @@ GameObject:
   - component: {fileID: 1450271868}
   m_Layer: 9
   m_Name: Door (26)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28739,7 +28739,7 @@ GameObject:
   - component: {fileID: 1489355217}
   m_Layer: 9
   m_Name: Door (32)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29507,7 +29507,7 @@ GameObject:
   - component: {fileID: 1538301873}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29542,7 +29542,7 @@ GameObject:
   - component: {fileID: 1563472816}
   m_Layer: 9
   m_Name: Door (33)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30285,7 +30285,7 @@ GameObject:
   - component: {fileID: 1591212480}
   m_Layer: 9
   m_Name: Door (53)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31175,7 +31175,7 @@ GameObject:
   - component: {fileID: 1604493634}
   m_Layer: 9
   m_Name: Door (40)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31571,7 +31571,7 @@ GameObject:
   - component: {fileID: 1634824665}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32034,7 +32034,7 @@ GameObject:
   - component: {fileID: 1670476066}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32236,7 +32236,7 @@ GameObject:
   - component: {fileID: 1672786050}
   m_Layer: 9
   m_Name: Door (52)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32443,7 +32443,7 @@ GameObject:
   - component: {fileID: 1679834611}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32542,7 +32542,7 @@ GameObject:
   - component: {fileID: 1687423737}
   m_Layer: 9
   m_Name: Door (18)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33158,7 +33158,7 @@ GameObject:
   - component: {fileID: 1716933774}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72552,7 +72552,7 @@ GameObject:
   - component: {fileID: 1744866924}
   m_Layer: 9
   m_Name: Door (6)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72626,7 +72626,7 @@ GameObject:
   - component: {fileID: 1755460636}
   m_Layer: 9
   m_Name: Door (35)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72698,7 +72698,7 @@ GameObject:
   - component: {fileID: 1764586058}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72733,7 +72733,7 @@ GameObject:
   - component: {fileID: 1767878881}
   m_Layer: 9
   m_Name: Door (34)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72858,7 +72858,7 @@ GameObject:
   - component: {fileID: 1784472179}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73270,7 +73270,7 @@ GameObject:
   - component: {fileID: 1804284134}
   m_Layer: 9
   m_Name: Door (3)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73450,7 +73450,7 @@ GameObject:
   - component: {fileID: 1820127219}
   m_Layer: 9
   m_Name: Door (10)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73846,7 +73846,7 @@ GameObject:
   - component: {fileID: 1829503421}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74255,7 +74255,7 @@ GameObject:
   - component: {fileID: 1863824469}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74449,7 +74449,7 @@ GameObject:
   - component: {fileID: 1884677517}
   m_Layer: 9
   m_Name: Door (48)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74857,7 +74857,7 @@ GameObject:
   - component: {fileID: 1912581002}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75570,7 +75570,7 @@ GameObject:
   - component: {fileID: 1952830914}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75603,7 +75603,7 @@ GameObject:
   - component: {fileID: 1953995056}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75803,7 +75803,7 @@ GameObject:
   - component: {fileID: 1959170679}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76050,7 +76050,7 @@ GameObject:
   - component: {fileID: 1964118974}
   m_Layer: 9
   m_Name: Door (20)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76230,7 +76230,7 @@ GameObject:
   - component: {fileID: 1975049661}
   m_Layer: 9
   m_Name: Door (12)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76471,7 +76471,7 @@ GameObject:
   - component: {fileID: 1976299792}
   m_Layer: 9
   m_Name: Door (47)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101073,7 +101073,7 @@ GameObject:
   - component: {fileID: 1997417356}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101746,7 +101746,7 @@ GameObject:
   - component: {fileID: 2038091655}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101779,7 +101779,7 @@ GameObject:
   - component: {fileID: 2038758082}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102003,7 +102003,7 @@ GameObject:
   - component: {fileID: 2070309627}
   m_Layer: 9
   m_Name: Door (30)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102266,7 +102266,7 @@ GameObject:
   - component: {fileID: 2090518983}
   m_Layer: 9
   m_Name: Door
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103069,7 +103069,7 @@ GameObject:
   - component: {fileID: 2129556147}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
