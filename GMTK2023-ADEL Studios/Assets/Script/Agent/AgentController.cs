@@ -46,7 +46,7 @@ public class AgentController : MonoBehaviour
     {
         if (other.transform.CompareTag(decisionTag))
         {
-            Agent.SetDestination(transform.position + targetPosition * 1f);
+            Agent.SetDestination(transform.position + targetPosition * 1.5f);
             ChangeState(STATES.PENDING);
         }
         else if (other.transform.CompareTag(obstacleTag) && currentState.Equals(STATES.WALKING))
