@@ -88,6 +88,7 @@ public class AgentController : MonoBehaviour
 
     private bool CanWalkTowards()
     {
+
         Vector3 reverseDirection = -targetPosition;
         Vector3[] checkDirections = { transform.forward, transform.right, -transform.right, -transform.forward };
         
@@ -141,6 +142,7 @@ public class AgentController : MonoBehaviour
         {
             OnStateChange();
         }
+        Debug.Log(currentState);
 
         switch (currentState)
         {
@@ -160,11 +162,10 @@ public class AgentController : MonoBehaviour
                 break;
 
             case STATES.DECISION:
-                Debug.Log(decisionTimer);
                 decisionTimer -= Time.deltaTime;
-                //if there's an open path forward, left, or right
                 if (CanWalkTowards())
                 {
+                    //if there's an open path that doesnt go back to where the agent came from
                     currentState = STATES.WALKING;
                 }
 
